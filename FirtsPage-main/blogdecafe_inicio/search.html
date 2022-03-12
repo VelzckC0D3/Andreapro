@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dictionary</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/globales.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/search.css">
+
+</head>
+
+<body>
+
+    <header class=" contenedor-barra">
+
+        <div class="barra">
+            <nav class="menu">
+                <a class="logo" href="home.html">  <svg width="200" height="200">       
+                    <image xlink:href="Parlario-logo.svg" width="200" height="200"/>    
+               </svg> </a>
+
+                <ul class="menu_items" id="otroModo">
+                    <li><a href="home.html" class="menu__items">Home</a></li>
+                    <li><a href="presentation.html" class="menu__items">Presentation</a></li>
+                    <li><a href="instructions.html" class="menu__items">Instructions</a></li>
+                    <li><a href="forum.html" class="menu__items">Forum</a></li>
+                    <li><a href="contact.html" class="menu__items">Contact</a></li>
+                    <li><a href="login2.html" class="menu__items">Login</a></li>
+                    <li><a href="register2.html" class="menu__items">Register</a></li>
+                </ul>
+                <span class="btn_menu" onclick="showmenu()"><i class="fas fa-bars"></i></span>
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="barra2">
+        <div class="buscador2">
+            <form class="input2">
+                <input class="input__text2" type="text" placeholder="Type..." required>
+                <input class="input__boton2" type="submit" name="" value="Search">
+            </form>
+        </div>
+    </div>
+
+    <main class="contenedor-search">
+        <div class=" layout-shifter">
+            <aside class="sidebar">
+                <div class="sidebar-cuadro">
+                    <h3 class="titulo-blog">¿Do you want to suggest a new word??</h3>
+                    <a href="suggest.html" class="input__boton" style="border-radius: 5px; ">Your suggest here</a>
+                </div>
+            </aside>
+
+            <div class="contenido-principal">
+                <article class="entrada-blog">
+                    <div class="entrada-search">
+                        <h3 class="word-search">Layout Shifter</h3>
+                        <div class="aaa"><a href="">Adjetivo /</a><a href="">Higt /</a><a href="">No vulgar</a></div>
+                        <p class="l-significado">
+                            ore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                            qui officia deserunt mollit anim id est laborum.Integer venenatis varius venenatis. Cras at
+                            nunc tincidunt, convallis eros sit amet, congue est. Orci varius natoque penatibus et magnis
+                            dis parturient montes, nascetur ridiculus mus.loLorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Donec dui
+                            risus, dictum vitae tincidunt vitae, dapibus in augue. Suspendisse fringilla ligula at justo
+                            volutpat imperdiet.
+                        </p>
+                        <p class="l-example">&#8226; example:</p>
+                        <p class="l-pequeña">--loLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui
+                            risus, dictum vitae tincidunt vitae, dapibus in augue. Suspendisse fringilla ligula at justo
+                            volutpat imperdiet. Etiam dolor quam, tincidunt elementum tempus at, tincidunt nec tortor.
+                            Donec sit amet laoreet felis, nec tempor eros. </p>
+                        <p class="l-pequeña">--jdsy la notivo0a gahx</p>
+                        <p class="l-suggest">do you wanna change something for this word? <a href="suggest.html">Suggest
+                                here</a> </p>
+                    </div>
+                </article>
+
+                <article class="entrada-blog">
+                    <div class="entrada-search">
+                        <h3 class="word-search">Layout Shifter</h3>
+                        <div class="aaa"><a href="">Adjetivo /</a><a href="">Higt /</a><a href="">No vulgar</a></div>
+
+                        <p class="l-significado">
+                            ore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                            qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p class="l-example"> &#8226 example:</p>
+                        <p class="l-pequeña">--sdjhsd nsdhs tha mobvien aubdn </p>
+                        <p class="l-pequeña">--jdsy la notivo0a gahx</p>
+                        <p class="l-suggest">do you wanna change something for this word? <a href="suggest.html">Suggest
+                                here</a> </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    
+    <main class="contenido-principal aviso1">
+            <div class="entrada-blog aviso2">
+                <div class="entrada-search aviso3">
+                    <h3 class="word-search">Please search another word:</h3>
+                    <br>
+                    
+                    <div class="aaa">Currently we don't have that expression on our
+                        dictionary ¿Do you want to <a href="/newWordSuggestion/">add it</a> like a
+                        new content?
+                    </div>
+                    
+                    <div class="aaa">Currently we don't have that expression on our
+                        dictionary <p><a href="/login">Login </a>or <a href="/register">Register</a>
+                            and add it like new content.</p>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer__container">
+            <a class="logo" href="home.html">  <svg width="130" height="80">       
+                <image xlink:href="Parlario-logo.svg" width="130" height="80"/>    
+           </svg> </a>
+            <div class="footertext">
+                <a href="">Politicas de privacidad .</a>
+                <a href="">Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="containerdos">
+        <p class="footer__texto">© Paisa Dictionary 2021</p>
+    </div>
+
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

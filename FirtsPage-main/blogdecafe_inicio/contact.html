@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dictionary</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/globales.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+</head>
+
+<body>
+
+    <header class=" contenedor-barra">
+
+        <div class="barra">
+            <nav class="menu">
+                <a class="logo" href="home.html">  <svg width="200" height="200">       
+                    <image xlink:href="Parlario-logo.svg" width="200" height="200"/>    
+               </svg> </a>
+
+                <ul class="menu_items" id="otroModo">
+                    <li><a href="home.html" class="menu__items">Home</a></li>
+                    <li><a href="presentation.html" class="menu__items">Presentation</a></li>
+                    <li><a href="instructions.html" class="menu__items">Instructions</a></li>
+                    <li><a href="forum.html" class="menu__items">Forum</a></li>
+                    <li><a href="contact.html" class="menu__items">Contact</a></li>
+                    <li><a href="login2.html" class="menu__items">Login</a></li>
+                    <li><a href="register2.html" class="menu__items">Register</a></li>
+                </ul>
+                <span class="btn_menu" onclick="showmenu()"><i class="fas fa-bars"></i></span>
+
+
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="barra2">
+        <div class="buscador2">
+            <form class="input2">
+                <input class="input__text2" type="text" placeholder="Type..." required>
+                <input class="input__boton2" type="submit" name="" value="Search">
+            </form>
+
+        </div>
+    </div>
+
+    <main>
+        <div class="contenedur">
+            <div class="contenedur__conten">
+                <div class="row">
+                    <h2 class="titulo-contact">Contact</h2>
+                    <form action="">
+                        
+                     <label class="label-contact" for="name">Name</label>   
+                    <input class="contact-input" type="text" placeholder="Type your name">
+                    <label class="label-contact" for="email">Email</label>
+                    <input class="contact-input" type="Email" placeholder="Type your email">
+                    <label class="label-contact" for="">Your message</label>
+                    <textarea class="text-contact" name="" id="" cols="30" rows="10"></textarea>
+
+                    <button class="input__boton" style="border-radius: 5px;" type="submit">Enviar</button>
+                    </form>
+                    
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+<footer class="footer">
+    <div class="footer__container">
+        <a class="logo" href="home.html">  <svg width="130" height="80">       
+            <image xlink:href="Parlario-logo.svg" width="130" height="80"/>    
+       </svg> </a>
+        <div class="footertext">
+            <a href="">Politicas de privacidad .</a>
+            <a href="">Cookies</a>
+        </div>
+
+
+    </div>
+</footer>
+<div class="containerdos">
+    <div>
+        <p class="footer__texto">© Paisa Dictionary 2021</p>
+    </div>
+
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+a{
+    color: var(--primario);
+}
+
+
+body {
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+
+.contenedor {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.entrada-blog a {
+    display: inline-block;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/** CODIGO AQUI **/
+
+@media (min-width: 768px) {
+    .contenedor-grid{
+        display: grid;
+       /*  grid-template-areas: "izquierda centro derecha"; */
+        grid-template-columns: .7fr 1fr 1fr;
+        column-gap: 2rem;
+        grid-auto-flow: column;
+    }
+}
+.contenido-principal{
+    grid-column: 1 / 2;
+    /**grib-area: centro**/
+}
+

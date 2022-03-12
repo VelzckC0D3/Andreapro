@@ -1,0 +1,37 @@
+/** Globales **/
+
+.contenedor {
+    max-width: 100rem;
+    width: 90%;
+    margin: 0 auto;
+}
+/* avisos y errorer */
+
+
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4 {
+    font-family: var(--font-family);
+    line-height: 1.2;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 3.6rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 1.5rem;
+}
+img{
+    max-width: 100%;
+}
+
+p{
+   margin: 0;
+   padding: 0;
+}

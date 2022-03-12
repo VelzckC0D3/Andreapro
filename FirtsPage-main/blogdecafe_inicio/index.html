@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dictionary</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/globales.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    
+</head>
+
+<body>
+
+    <header class=" contenedor-barra">
+
+        <div class="barra">
+            <nav class="menu">
+                <a class="logo" href="home.html">  <svg width="200" height="200">       
+                    <image xlink:href="Parlario-logo.svg" width="200" height="200"/>    
+               </svg> </a>
+
+                <ul class="menu_items" id="otroModo">
+                    <li><a href="home.html" class="menu__items ">Home</a></li>
+                    <li><a href="presentation.html" class="menu__items presentation">Presentation</a></li>
+                    <li><a href="instructions.html" class="menu__items instructions">Instructions</a></li>
+                    <li><a href="forum.html" class="menu__items forum">Forum</a></li>
+                    <li><a href="contact.html" class="menu__items contact">Contact</a></li>
+                    <li><a href="login.html" class="menu__items login">Login</a></li>
+                    <li><a href="register.html" class="menu__items register">Register</a></li>
+                </ul>
+                <span class="btn_menu" onclick="showmenu()"><i class="fas fa-bars"></i></span>
+
+
+            </nav>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <div class="contenedor-imagen">
+            <div class="contenido">
+                <div class="contenido__texto">
+                    <h2 class="no-margin contenido__a">Q'hubo pués? </h2>
+                    <p class="parrafo">Aliquam erat volutpat. Nunc blandit cursus lorem, eu iaculis sem convallis nec.
+                        Suspendisse interdum varius lectus quis condimentum.</p>
+
+                    <div class="box">
+                        <form class="input">
+                            <input class="input__text" type="text" placeholder="Type..." required>
+                            <input class="input__boton" type="submit" name="" value="Search">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="contenedor bloques">
+            <article class="entrada-bloque">
+                <h3 class="bloque__titulo">About us</h3>
+                <p class="bloque__parrafo">Nunc blandit cursus lorem, eu iaculis sem convallis nec. Suspendisse interdum
+                    varius lectus quis
+                    condimentum. Donec ut iaculis ex. Aenean metus eros, fermentum sit amet lacus sed, maximus tempus
+                    nisl.</p>
+                <a class="leermas" href="">Leer mas</a>
+            </article>
+
+            <article class="entrada-bloque">
+                <h3 class="bloque__titulo">What word do you want to learn?</h3>
+                <p class="bloque__parrafo">Nunc blandit cursus lorem, eu iaculis sem convallis nec. Suspendisse interdum
+                    varius lectus quis
+                    condimentum. Donec ut iaculis ex. Aenean metus eros, fermentum sit amet lacus sed, maximus tempus
+                    nisl.</p>
+                <a class="leermas" href="">Leer mas</a>
+            </article>
+
+        </div>
+
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="footer__container">
+            <a class="logo" href="home.html">  <svg width="130" height="80">       
+                <image xlink:href="Parlario-logo.svg" width="130" height="80"/>    
+           </svg> </a>
+            <div class="footertext">
+                <a  href="">Politicas de privacidad .</a>
+                <a  href="">Cookies</a>
+            </div>
+
+
+        </div>
+    </footer>
+    <div class="containerdos">
+        <div>
+            <p class="footer__texto">© Paisa Dictionary 2021</p>
+        </div>
+
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

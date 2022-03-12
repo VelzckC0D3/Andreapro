@@ -1,0 +1,366 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+    --font-family: 'Roboto', sans-serif;
+
+    
+    --gris: #7B7B7B;
+    --primario: #D82633;
+    --secundario: #D82633;
+    --fondopaco: #c30f1809;
+    --tercero: #c30f180c;
+    --blanco: #FFF;
+    --negro: #000;
+    
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--font-family);
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color: #eee;
+}
+
+
+/** Utilidades **/
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centrar-texto {
+    text-align: center;
+}
+
+/** Main **/
+
+    
+.contenedor-imagen {
+    background-image: url(../img/Plaza\ Botero.jfif);
+    height: 45rem;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contenido{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenido__texto{
+    width: 800px;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.836);
+    box-shadow: 1px 1px  rgba(0, 0, 0, .4);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-radius: 0.5rem;
+    /**margin-left: 30rem;
+    margin-right: 30rem;**/
+}
+/**.buscador{
+    width: 300px;
+    padding: 0;
+    margin: 0 0 2px;
+    font-size: 1.2rem;**/
+
+.box{
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+}
+.parrafo{
+    grid-column: 1 / 2;
+    line-height: 2;
+}
+
+.input{
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.input__text{
+    width: 300px;
+    border: none;
+    background-color: var(--blanco);
+    outline: none;
+    height: 3.5rem;
+    padding: 0 25px;
+    border-radius: 6px 0 0 6px;
+}
+.input__boton{
+    left: -5px;
+    height: 3.5rem;
+    border-radius: 0 6px 6px 0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: var(--primario);
+    color: var(--blanco);
+}
+
+.input__boton:hover{
+    background-color: rgba(0, 0, 0, 0.76);
+    color: var(--blanco);
+}
+
+@media screen and (max-width: 768px ) {
+    .contenido__texto{
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+    }
+    .parrafo{
+        line-height: 1.5;
+        font-size: 1.3rem;
+    }
+    .input{
+        padding: 1rem;
+    }
+    .contenido__a{
+        font-size: 3rem;
+    }
+    
+}
+@media screen and (max-width: 533px ) {
+    .contenido__texto{
+        width: 360px;
+    }
+    .input__text{
+        width: 260px;
+    }
+}
+@media screen and (max-width:411px ) {
+    .contenido__a{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .contenido__texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+}
+
+.bloques{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+}
+.entrada-bloque{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    background-color: #c30f1810;
+}
+.bloque__parrafo{
+    margin-right: 3rem;
+    margin-left: 3rem;
+    display: flex;
+    margin-bottom: 2rem;
+    
+}
+.bloque__titulo{
+    color: var(--primario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leermas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primario);
+    color: var(--blanco);
+    margin-left: 18rem;
+    margin-right: 18rem;
+}
+
+@media screen and (max-width: 768px ) {
+    .bloques{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leermas{
+        margin-left: 12rem;
+        margin-right:12rem;
+    }
+    .bloque__titulo{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+.footer{
+    height: 8rem;
+    background-color: var(--tercero);
+    margin-top: 3rem;
+}
+.footer__container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+    justify-content: space-between;
+}
+
+.logofooter{
+    color: var(--blanco);
+    margin-left: 6rem;
+    margin-top: 2rem;
+}
+.footertext{
+    margin-right: 20rem;
+    margin-top: 2rem;
+
+}
+.footertext a{
+    text-decoration: none;
+    color: var(--primario);
+    font-weight: bold;
+}
+
+.containerdos{
+    background-color: #202020;
+    margin: 0;
+    height: 4rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.footer__texto{
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--blanco);
+}
+
+@media screen and (max-width: 768px) {
+    .footertext{
+    margin-right: 14rem;
+}
+}
+@media screen and (max-width: 680px ) {
+    .footertext{
+     margin-right: 4rem;
+        }
+    .logofooter{
+        margin-left: 3rem;
+    }  
+    .logo__bold2{
+        font-size: 2rem;
+    }
+    .logo__footer2{
+        font-size: 2rem;  
+}
+}
+
+@media screen and (max-width: 500px) {
+    
+    .footer__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footertext{
+        margin-top: 0;
+        margin-left: .8rem;
+           }
+       .logofooter{
+           margin-left: .5rem;
+           
+           
+       }  
+       .logo__bold2{
+           color: var(--blanco);
+           font-size: 1.5rem;
+           font-weight: bold;
+       }
+       .logo__footer2{
+           color: var(--blanco);
+           font-size: 1.5rem;
+}
+}
+
+.contenedorabout{
+    width: 90% !important;
+    font-size: 1.8rem !important;
+    line-height: 28px !important;
+    color: #000000 !important;
+    text-align: left !important;
+}
+.imagencontacto1{
+    background-image: url(../img/dictionary-gcd78938d6_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 18rem;
+    position: relative;
+    margin-bottom: 2rem;
+    border-bottom: solid .5rem #C30F17;
+}
+.imagen__contenido1{
+    position: absolute;
+    background-color: rgba( 0,0,0, 40%);
+    width: 100%;
+    height: 100%;
+}
+.imagencontacto2{
+    background-image: url(../img/book-ge031c97de_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 18rem;
+    position: relative;
+    margin-bottom: 2rem;
+    border-bottom: solid .5rem var(--secundario);
+}
+.imagen__contenido2{
+    position: absolute;
+    background-color: rgba( 0,0,0, 40%);
+    width: 100%;
+    height: 100%;
+}
+.imagencontacto3{
+    background-image: url(../img//Plaza\ Botero.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 18rem;
+    position: relative;
+    margin-bottom: 2rem;
+    border-bottom: solid .5rem var(--secundario);
+}
+.imagen__contenido3{
+    position: absolute;
+    background-color: rgba( 0,0,0, 40%);
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+

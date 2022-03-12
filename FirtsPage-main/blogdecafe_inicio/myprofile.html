@@ -1,0 +1,51 @@
+<div class="container py-5">
+    <h1>
+    <center>My profile</center>
+    </h1>
+    <div class="container py-5">
+    <center>
+    <h3>Username: {{ user }}</h3>
+    <br>
+    <h3>Email: {{ user.email }}</h3>
+    <br>
+    <h3>Password: ************</h3>
+    <br>
+    <a href="/password">Change my password</a>
+    <hr>
+    </center>
+    </div>
+    <div class="row">
+    <div class="column">
+    <center><h3>My current forum topics</h3>
+    <hr>
+    <br>
+    <h4><a href="/entrada/{{forums.0.slug}}">{{ forums.0 }}</a></h4>
+    <h4><a href="/entrada/{{forums.1.slug}}">{{ forums.1 }}</a></h4>
+    <h4><a href="/entrada/{{forums.2.slug}}">{{ forums.2 }}</a></h4>
+    <h4><a href="/entrada/{{forums.3.slug}}">{{ forums.3 }}</a></h4>
+    <h4><a href="/entrada/{{forums.4.slug}}">{{ forums.4 }}</a></h4>
+    {% if forums.4 %}
+    <h4>...</h4>
+    {% endif %}
+    <br>
+    <h4><a href="/my_topics/">View all</a></h4>
+    </center>
+    </div>
+    <div class="column">
+    <center><h3>My suggestions</h3>
+    <hr>
+    <br>
+    <h4>Last suggestion:</h4>
+    <p>{{suggestions.entry}} | {{suggestions.state}}</p>
+    <a href="/my_suggestions/">(view all)</a>
+    <br>
+    <br>
+    <h4>Last new word suggestion:</h4>
+    <p>{{new_word_suggestions.entry}} | 
+    {{new_word_suggestions.state}}</p>
+    <a href="/my_new_word_suggestions/">(view all)</a>
+    </center>
+    </div>
+    </div>
+    </div>
+    
