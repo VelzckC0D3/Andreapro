@@ -25,6 +25,9 @@ body {
     font-size: 1.6rem;
     line-height: 2;
     background-color: #eee;
+    position: relative;
+    
+    min-height: 100vh;
 }
 
 
@@ -218,6 +221,12 @@ body {
     height: 8rem;
     background-color: var(--tercero);
     margin-top: 3rem;
+    
+}
+.hola{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 .footer__container{
     display: flex;
